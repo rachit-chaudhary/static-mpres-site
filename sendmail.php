@@ -14,14 +14,15 @@
         $email = $_POST["email"];
         $product = $_POST["product"];
         $quantity = $_POST["quantity"];
-        $toEmail = "mailracit@gmail.com";
+        $toEmail = "mailracit@gmail.com, rachit.chaudhary@impresariopromotions.com";
+        $subject ="mprés inquiry for " . $product;
 
         $mailHeaders = "Name: " . $name .
         "\r\n Email: " . $email .
         "\r\n Product: " . $product .
         "\r\n Quantity: " . $quantity . "\r\n";
 
-        if(mail($toEmail, $name, $mailHeaders)) {
+        if(mail($toEmail, $subject , $mailHeaders)) {
             $message = "Information received successfully.";
         }
     }
