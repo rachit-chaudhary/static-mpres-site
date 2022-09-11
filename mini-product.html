@@ -56,6 +56,18 @@
   </section>
 
   <div class="container">
+    <div id="modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
     <div class="col-md-12 col-xs-12 ">
         <!--product-card-->
       <div class="product-card">
@@ -93,9 +105,38 @@
                 <p>20W</p>
               </div>
             </div>
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Open Modal</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="container">
+                <div class="modal-content">
+                  <div class="container">
+                    <span class="close">&times;</span>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="product">Product:</label>
+                    <select>
+                      <option value="mini-hair-straightener">Mini Hair Straightener</option>
+                      <option value="mini-hair-curler">Mini Hair Curler</option>
+                      <option value="mini-hair dryer">Mini Hair Dryer</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="quantity" id="quantity">
+                    <button type="submit">submit</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
             <div class="inquiry-btn">
               <div class="contact-btn">
-                <a href="#">Get quote</a>
+                <a href="#" id="getQuote">dummy button</a>
               </div>
             </div>
           </div>
@@ -255,6 +296,7 @@
     </div>
   </footer>
 
+  <script src="assets/js/script.js"></script>
   <!--Importing AR Button-->
   <script type="module" src="https://unpkg.com/@leoncvlt/ar-button"></script>
   <!-- Importing Modelviewer -->
