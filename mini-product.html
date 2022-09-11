@@ -116,19 +116,24 @@
                 <div class="modal-content">
                   <div class="container">
                     <span class="close">&times;</span>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
-                    <label for="product">Product:</label>
-                    <select>
-                      <option value="mini-hair-straightener">Mini Hair Straightener</option>
-                      <option value="mini-hair-curler">Mini Hair Curler</option>
-                      <option value="mini-hair dryer">Mini Hair Dryer</option>
-                    </select>
-                    <label for="quantity">Quantity:</label>
-                    <input type="number" name="quantity" id="quantity">
-                    <button type="submit">submit</button>
+                    <form action="" method="post" autocomplete="off">
+                      <label for="name">Name:</label>
+                      <input type="text" name="name" id="name" required>
+                      <label for="email">Email:</label>
+                      <input type="email" name="email" id="email" required>
+                      <label for="product">Product:</label>
+                      <select>
+                        <option value="mini-hair-straightener">Mini Hair Straightener</option>
+                        <option value="mini-hair-curler">Mini Hair Curler</option>
+                        <option value="mini-hair dryer">Mini Hair Dryer</option>
+                      </select>
+                      <label for="quantity">Quantity:</label>
+                      <input type="number" name="quantity" id="quantity" required>
+                      <submit type="submit">submit</submit>
+                      <div class="success">
+                        <strong>success</strong>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
