@@ -39,7 +39,7 @@ header ul li a.nav-link:hover{
     justify-content: center;
 }
 .contact-btn{
-    width: 100px;
+    width: 110px;
     background-color: #0066cc;
     border-radius: 25px;
     padding: 10px 12px;
@@ -299,7 +299,7 @@ header ul li a.nav-link:hover{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 50px;/*  Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -330,6 +330,52 @@ header ul li a.nav-link:hover{
     text-decoration: none;
     cursor: pointer;
   }
+
+/* popup form */
+.modal-box h2{
+    font-size: 2.45rem;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+.modal-box{
+    background: #f9f9f9;
+    border-radius: 25px;
+    width: 70%!important;   
+}
+.inquiry-form{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 0px auto;
+}
+label{
+    margin-top: 25px;
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue', cursive;
+}
+.input-box{
+    background-color: #f9f9f9;
+    border: 1px solid #666666;
+    height: 45px;
+    padding: 5px 25px;
+}
+.inquiry-form select {
+    height: 45px;
+    background: #f9f9f9;
+    padding: 0px 25px;
+}
+.inquiry-form .submit-btn{
+    margin: 25px 0px;
+    background-color: #020202;
+    color: #f9f9f9;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    letter-spacing: 7px;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+}
 .section-heading{
     margin: 55px 0px 0px 0px;
     display: flex;
@@ -456,6 +502,11 @@ model-viewer{
 }
 .inquiry-btn{
     margin: 25px 0px 0px 10px;
+}
+.myBtn{
+    background: none;
+    border: none;
+    color: #fff;
 }
 .reach-us-banner-textr
 /*contact body*/
